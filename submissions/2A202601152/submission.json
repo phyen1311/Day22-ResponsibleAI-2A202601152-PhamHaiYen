@@ -8,81 +8,81 @@
   },
   "industry": "education-ai-tutor",
   "product_context": {
-    "product_name": "AIGuide AI Tutor",
+    "product_name": "AIGuide - Trợ giảng AI",
     "product_stage": "pilot",
-    "problem_statement": "Students in large introductory artificial intelligence courses often wait too long for targeted explanations when they struggle with foundational concepts, model evaluation, and responsible AI, while lecturers and teaching assistants cannot provide immediate one-to-one support at every practice moment.",
+    "problem_statement": "Sinh viên trong các lớp nhập môn trí tuệ nhân tạo có sĩ số lớn thường phải chờ lâu mới nhận được giải thích phù hợp khi gặp khó khăn với kiến thức nền tảng, đánh giá mô hình và AI có trách nhiệm, trong khi giảng viên và trợ giảng không thể hỗ trợ riêng từng người tại mọi thời điểm luyện tập.",
     "target_users": [
-      "university students in introductory artificial intelligence courses",
-      "artificial intelligence lecturers",
-      "teaching assistants"
+      "sinh viên đại học học môn nhập môn trí tuệ nhân tạo",
+      "giảng viên trí tuệ nhân tạo",
+      "trợ giảng"
     ],
-    "value_hypothesis": "Providing timely curriculum-grounded hints at the point of difficulty will reduce time spent stuck and improve practice completion without increasing verified misconceptions about artificial intelligence concepts, model limitations, or responsible-use boundaries.",
+    "value_hypothesis": "Việc cung cấp gợi ý kịp thời, có căn cứ từ chương trình học tại thời điểm sinh viên gặp khó khăn sẽ giảm thời gian bị mắc kẹt và tăng tỷ lệ hoàn thành bài luyện tập mà không làm tăng các hiểu sai đã được xác nhận về khái niệm AI, giới hạn mô hình hoặc ranh giới sử dụng có trách nhiệm.",
     "in_scope": [
-      "explain foundational artificial intelligence and responsible AI concepts using instructor-approved course materials",
-      "provide progressive hints for ungraded conceptual and code-reading practice",
-      "recommend relevant follow-up AI learning activities",
-      "identify uncertainty and escalate unresolved questions to a teaching assistant"
+      "giải thích các khái niệm nền tảng về trí tuệ nhân tạo và AI có trách nhiệm bằng tài liệu khóa học đã được giảng viên phê duyệt",
+      "cung cấp gợi ý từng bước cho bài luyện tập khái niệm và đọc mã không tính điểm",
+      "đề xuất hoạt động học AI tiếp theo phù hợp",
+      "nhận diện sự không chắc chắn và chuyển câu hỏi chưa giải quyết được cho trợ giảng"
     ],
     "non_goals": [
-      "automatic grading or changes to official grades",
-      "academic misconduct detection or disciplinary decisions",
-      "generating or submitting graded code, assignments, or examinations on a student's behalf",
-      "deploying models or taking external actions for the student",
-      "replacing lecturers or teaching assistants"
+      "tự động chấm điểm hoặc thay đổi điểm chính thức",
+      "phát hiện gian lận học thuật hoặc đưa ra quyết định kỷ luật",
+      "tạo hoặc nộp mã nguồn, bài tập hay bài thi có tính điểm thay cho sinh viên",
+      "triển khai mô hình hoặc thực hiện hành động bên ngoài thay cho sinh viên",
+      "thay thế giảng viên hoặc trợ giảng"
     ],
-    "user_journey_moment": "After a student submits an incorrect answer to an ungraded AI-course practice activity and before the complete instructor-approved explanation is shown",
+    "user_journey_moment": "Sau khi sinh viên gửi câu trả lời sai trong hoạt động luyện tập môn AI không tính điểm và trước khi lời giải đầy đủ đã được giảng viên phê duyệt được hiển thị",
     "target_launch_or_review_date": "2026-10-01",
     "automation_level": "recommendation",
-    "fallback_experience": "If the tutor is unavailable, cannot ground an answer in approved course material, or is paused for safety review, the learning platform shows instructor-approved static hints and lets the student send the question to a teaching assistant.",
+    "fallback_experience": "Nếu trợ giảng AI không khả dụng, không thể tạo câu trả lời có căn cứ từ tài liệu khóa học đã duyệt hoặc bị tạm dừng để đánh giá an toàn, nền tảng học tập sẽ hiển thị gợi ý tĩnh đã được giảng viên phê duyệt và cho phép sinh viên gửi câu hỏi đến trợ giảng.",
     "decision_reversibility": "partially-reversible"
   },
   "system_profile": {
-    "purpose": "Support university students in understanding foundational artificial intelligence, model evaluation, and responsible AI concepts through timely curriculum-grounded hints during ungraded practice.",
+    "purpose": "Hỗ trợ sinh viên đại học hiểu kiến thức nền tảng về trí tuệ nhân tạo, đánh giá mô hình và AI có trách nhiệm thông qua các gợi ý kịp thời, có căn cứ từ chương trình học trong quá trình luyện tập không tính điểm.",
     "user_groups": [
-      "university students in introductory artificial intelligence courses",
-      "artificial intelligence lecturers",
-      "teaching assistants",
-      "course coordinators"
+      "sinh viên đại học học môn nhập môn trí tuệ nhân tạo",
+      "giảng viên trí tuệ nhân tạo",
+      "trợ giảng",
+      "điều phối viên môn học"
     ],
-    "decision_impact": "The tutor influences which explanation, hint, or practice activity a student sees next, but it cannot change official grades, determine academic misconduct, or make progression decisions.",
+    "decision_impact": "Trợ giảng AI ảnh hưởng đến lời giải thích, gợi ý hoặc hoạt động luyện tập mà sinh viên nhìn thấy tiếp theo, nhưng không được thay đổi điểm chính thức, kết luận gian lận học thuật hoặc quyết định việc học tiếp của sinh viên.",
     "data_types": [
-      "instructor-approved artificial intelligence course materials and worked examples",
-      "conceptual questions, code-reading exercises, and expected reasoning steps",
-      "student-entered questions and practice answers using synthetic data for this lab",
-      "pseudonymous interaction and feedback logs",
-      "content-quality review and escalation records"
+      "tài liệu môn trí tuệ nhân tạo và ví dụ có lời giải đã được giảng viên phê duyệt",
+      "câu hỏi khái niệm, bài tập đọc mã và các bước lập luận mong đợi",
+      "câu hỏi và câu trả lời luyện tập do sinh viên nhập; bài lab này chỉ sử dụng dữ liệu tổng hợp",
+      "nhật ký tương tác và phản hồi dùng định danh giả",
+      "hồ sơ đánh giá chất lượng nội dung và chuyển cấp xử lý"
     ],
-    "deployment_context": "A limited pilot embedded in the university learning management system for one introductory artificial intelligence course in Vietnam, available only during ungraded practice and monitored by the course teaching team.",
+    "deployment_context": "Một chương trình thử nghiệm giới hạn được tích hợp vào hệ thống quản lý học tập của trường đại học cho một môn nhập môn trí tuệ nhân tạo tại Việt Nam, chỉ sử dụng trong hoạt động luyện tập không tính điểm và được đội ngũ giảng dạy giám sát.",
     "target_markets": [
-      "Vietnam"
+      "Việt Nam"
     ],
     "system_boundary": {
-      "model": "A language model configured to retrieve from an instructor-approved artificial intelligence course knowledge base, generate progressive hints, express uncertainty, and abstain when approved grounding is unavailable.",
-      "application": "A learning-management-system chat interface that displays hints and citations, collects student feedback, enforces scope restrictions, logs review evidence, and routes unresolved questions to teaching assistants.",
+      "model": "Mô hình ngôn ngữ được cấu hình để truy xuất từ kho kiến thức môn trí tuệ nhân tạo đã được giảng viên phê duyệt, tạo gợi ý từng bước, thể hiện sự không chắc chắn và từ chối trả lời khi không có căn cứ đã được duyệt.",
+      "application": "Giao diện trò chuyện trong hệ thống quản lý học tập, có chức năng hiển thị gợi ý và trích dẫn, thu thập phản hồi của sinh viên, thực thi giới hạn phạm vi, ghi nhận bằng chứng đánh giá và chuyển câu hỏi chưa giải quyết được cho trợ giảng.",
       "people": [
-        "students who request and act on hints",
-        "lecturers who approve source materials and learning policies",
-        "teaching assistants who review escalations and reported errors",
-        "course coordinators who own the pilot and pause decisions",
-        "privacy and responsible AI reviewers who independently assess launch evidence"
+        "sinh viên yêu cầu và sử dụng gợi ý",
+        "giảng viên phê duyệt tài liệu nguồn và chính sách học tập",
+        "trợ giảng xử lý câu hỏi chuyển cấp và lỗi được báo cáo",
+        "điều phối viên môn học chịu trách nhiệm chương trình thử nghiệm và quyết định tạm dừng",
+        "người đánh giá quyền riêng tư và AI có trách nhiệm thực hiện đánh giá độc lập bằng chứng phát hành"
       ],
       "vendors": [
-        "language model service provider",
-        "learning management system provider"
+        "nhà cung cấp dịch vụ mô hình ngôn ngữ",
+        "nhà cung cấp hệ thống quản lý học tập"
       ],
       "upstream_inputs": [
-        "approved artificial intelligence syllabus and lecture materials",
-        "instructor-validated conceptual, evaluation, and code-reading exercise bank",
-        "student questions and ungraded practice attempts",
-        "course safety policy and escalation rules",
-        "vendor model and service documentation"
+        "đề cương và tài liệu bài giảng trí tuệ nhân tạo đã được phê duyệt",
+        "ngân hàng bài tập về khái niệm, đánh giá và đọc mã đã được giảng viên xác nhận",
+        "câu hỏi và lượt làm bài luyện tập không tính điểm của sinh viên",
+        "chính sách an toàn môn học và quy tắc chuyển cấp xử lý",
+        "tài liệu về mô hình và dịch vụ của nhà cung cấp"
       ],
       "downstream_decisions": [
-        "show a grounded progressive hint",
-        "recommend a related ungraded practice activity",
-        "abstain and show instructor-approved fallback content",
-        "escalate an unresolved or reported response to a teaching assistant",
-        "pause affected tutor content pending human review"
+        "hiển thị gợi ý từng bước có căn cứ",
+        "đề xuất hoạt động luyện tập liên quan không tính điểm",
+        "từ chối trả lời và hiển thị nội dung dự phòng đã được giảng viên duyệt",
+        "chuyển câu hỏi chưa giải quyết được hoặc phản hồi bị báo lỗi cho trợ giảng",
+        "tạm dừng nội dung trợ giảng AI bị ảnh hưởng để chờ con người đánh giá"
       ]
     }
   },
@@ -92,12 +92,12 @@
     "sensitive_data": 3,
     "affected_scale": 2,
     "human_review_need": 4,
-    "rationale": "Harm severity is 3 because incorrect or misleading hints can reinforce misconceptions about artificial intelligence, model limitations, evaluation, bias, or responsible use, although an instructor can usually correct them. High-stakes impact is 3 because the tutor can influence preparation and confidence but is prohibited from grading, misconduct findings, progression decisions, model deployment, or external actions. Sensitive-data exposure is 3 because questions, practice attempts, and pseudonymous interaction logs can reveal individual learning difficulties and therefore require minimization, access control, and retention limits. Affected scale is 2 because the initial deployment is restricted to one course and a controlled pilot cohort. Human-review need is 4 because AI lecturers must approve the knowledge base and teaching assistants need authority to review reported errors, resolve escalations, and pause unsafe content. These ratings support product-risk triage and do not determine legal classification."
+    "rationale": "Mức độ nghiêm trọng của tác hại là 3 vì gợi ý sai hoặc gây hiểu nhầm có thể củng cố nhận thức sai về trí tuệ nhân tạo, giới hạn mô hình, đánh giá, thiên lệch hoặc sử dụng có trách nhiệm, dù giảng viên thường có thể sửa lại. Mức độ ảnh hưởng nghiêm trọng là 3 vì trợ giảng AI có thể ảnh hưởng đến sự chuẩn bị và tự tin của sinh viên nhưng bị cấm chấm điểm, kết luận gian lận, quyết định tiến trình học, triển khai mô hình hoặc thực hiện hành động bên ngoài. Dữ liệu nhạy cảm là 3 vì câu hỏi, lượt luyện tập và nhật ký tương tác dùng định danh giả có thể tiết lộ khó khăn học tập của từng người nên cần giảm thiểu dữ liệu, kiểm soát truy cập và giới hạn lưu giữ. Quy mô ảnh hưởng là 2 vì lần triển khai đầu chỉ giới hạn trong một môn học và một nhóm thử nghiệm có kiểm soát. Nhu cầu đánh giá của con người là 4 vì giảng viên AI phải phê duyệt kho kiến thức và trợ giảng phải có quyền đánh giá lỗi được báo cáo, xử lý chuyển cấp và tạm dừng nội dung không an toàn. Các mức điểm này chỉ phục vụ phân loại ưu tiên rủi ro sản phẩm, không quyết định phân loại pháp lý."
   },
   "legal_classification": {
     "vietnam": {
       "status": "uncertain-requires-legal-review",
-      "rationale": "The pilot is a recommendation-only university artificial intelligence course tutor and excludes grading, misconduct findings, progression decisions, model deployment, and external actions. Vietnam's AI Law, implementing decree, high-risk list, and personal-data law are in force, but the final intended-purpose match, provider and deployer roles, student-data flow, vendor transfer, and required controls have not been confirmed by qualified reviewers; signed legal and privacy review is therefore a release blocker.",
+      "rationale": "Chương trình thử nghiệm là trợ giảng cho môn trí tuệ nhân tạo ở đại học, chỉ đưa ra khuyến nghị và loại trừ chấm điểm, kết luận gian lận, quyết định tiến trình học, triển khai mô hình và hành động bên ngoài. Luật Trí tuệ nhân tạo, nghị định hướng dẫn, danh mục hệ thống AI rủi ro cao và Luật Bảo vệ dữ liệu cá nhân của Việt Nam đã có hiệu lực, nhưng mức độ phù hợp với mục đích dự kiến cuối cùng, vai trò của bên cung cấp và bên triển khai, luồng dữ liệu sinh viên, việc chuyển dữ liệu cho nhà cung cấp và các biện pháp kiểm soát bắt buộc chưa được người đánh giá có chuyên môn xác nhận; vì vậy đánh giá pháp lý và quyền riêng tư có chữ ký là điều kiện chặn phát hành.",
       "source_ids": [
         "SRC-05",
         "SRC-06",
@@ -107,39 +107,39 @@
     },
     "eu": {
       "status": "not-applicable",
-      "rationale": "The current pilot is offered only for one university course in Vietnam and is not placed on the EU market or used in the EU, so EU classification is not applicable to this release scope. Any EU expansion, learning-outcome evaluation, learning-process steering, grading, cheating detection, or material purpose change requires a new role and high-risk classification review before release.",
+      "rationale": "Chương trình thử nghiệm hiện chỉ được cung cấp cho một môn học đại học tại Việt Nam, không được đưa ra thị trường hoặc sử dụng tại Liên minh châu Âu, nên phân loại của EU không áp dụng cho phạm vi phát hành này. Mọi kế hoạch mở rộng sang EU, đánh giá kết quả học tập, định hướng quá trình học, chấm điểm, phát hiện gian lận hoặc thay đổi đáng kể về mục đích đều phải được đánh giá lại vai trò và phân loại rủi ro cao trước khi phát hành.",
       "source_ids": [
         "SRC-09"
       ]
     },
-    "other_markets": "Not assessed because the pilot is limited to Vietnam; any additional market is a material scope change that requires legal, privacy, and product-risk re-review.",
+    "other_markets": "Chưa đánh giá vì chương trình thử nghiệm chỉ giới hạn tại Việt Nam; việc bổ sung bất kỳ thị trường nào là thay đổi đáng kể về phạm vi và phải đánh giá lại pháp lý, quyền riêng tư và rủi ro sản phẩm.",
     "legal_review_required": true
   },
   "product_metrics": {
-    "success_kpi": "By the end of the six-week pilot, at least 70% of participating students who complete both assessments improve introductory AI-course mastery by at least 10 percentage points from pre-test to post-test, with the denominator and attrition reported.",
-    "risk_kri": "The confirmed factual or conceptual error rate remains at or below 1% in each weekly stratified review sample, with any response that materially misstates a foundational AI concept, evaluation result, model limitation, bias risk, or responsible-use safeguard treated as a critical error.",
-    "guardrail_metric": "The number of official grade changes, academic-misconduct referrals, model deployments, or external actions based solely on AIGuide output or tutor logs remains exactly zero; any occurrence pauses the pilot immediately.",
-    "review_cadence": "The Product, AI Course Content, Learning Experience, Privacy, and Responsible AI owners review the pilot weekly and immediately after any critical error, threshold breach, data incident, serious complaint, or change to model, vendor, course, data, market, intended purpose, or automation level."
+    "success_kpi": "Đến cuối chương trình thử nghiệm sáu tuần, ít nhất 70% sinh viên tham gia và hoàn thành cả hai bài đánh giá cải thiện mức độ nắm vững kiến thức môn AI nhập môn ít nhất 10 điểm phần trăm từ bài kiểm tra trước đến bài kiểm tra sau; báo cáo phải nêu rõ mẫu số và tỷ lệ bỏ cuộc.",
+    "risk_kri": "Tỷ lệ lỗi sự kiện hoặc khái niệm đã được xác nhận phải không vượt quá 1% trong mỗi mẫu đánh giá phân tầng hằng tuần; mọi phản hồi làm sai lệch đáng kể khái niệm AI nền tảng, kết quả đánh giá, giới hạn mô hình, rủi ro thiên lệch hoặc biện pháp sử dụng có trách nhiệm đều được coi là lỗi nghiêm trọng.",
+    "guardrail_metric": "Số lần thay đổi điểm chính thức, chuyển hồ sơ gian lận học thuật, triển khai mô hình hoặc thực hiện hành động bên ngoài chỉ dựa trên đầu ra hay nhật ký của AIGuide phải luôn bằng 0; bất kỳ trường hợp nào xảy ra đều phải tạm dừng chương trình thử nghiệm ngay lập tức.",
+    "review_cadence": "Chủ sở hữu Sản phẩm, Nội dung môn AI, Trải nghiệm học tập, Quyền riêng tư và AI có trách nhiệm đánh giá chương trình thử nghiệm hằng tuần và ngay sau mọi lỗi nghiêm trọng, vi phạm ngưỡng, sự cố dữ liệu, khiếu nại nghiêm trọng hoặc thay đổi về mô hình, nhà cung cấp, môn học, dữ liệu, thị trường, mục đích dự kiến hay mức độ tự động hóa."
   },
   "release_decision": {
-    "accountable_product_owner": "Learning Platform Product Owner",
-    "risk_acceptance_owner": "Dean of Undergraduate Education",
-    "independent_reviewer": "Responsible AI, Privacy, and Academic Quality Review Panel",
+    "accountable_product_owner": "Chủ sở hữu sản phẩm Nền tảng học tập",
+    "risk_acceptance_owner": "Trưởng khoa Giáo dục Đại học",
+    "independent_reviewer": "Hội đồng đánh giá độc lập về AI có trách nhiệm, quyền riêng tư và chất lượng học thuật",
     "decision": "conditional-go",
     "release_blockers": [
-      "GAP-01: content-quality and grounding evidence pack is not approved",
-      "GAP-02: progressive-hint and over-reliance acceptance review is not passed",
-      "GAP-03: purpose-limitation, incident-correction, and appeal evidence is not signed",
-      "GAP-04: Vietnam AI and privacy applicability memoranda are not signed"
+      "GAP-01: bộ bằng chứng về chất lượng nội dung và căn cứ nguồn chưa được phê duyệt",
+      "GAP-02: đánh giá nghiệm thu gợi ý từng bước và kiểm soát lệ thuộc AI chưa đạt",
+      "GAP-03: bằng chứng về giới hạn mục đích, khắc phục sự cố và khiếu nại chưa được ký duyệt",
+      "GAP-04: bản ghi nhớ về khả năng áp dụng pháp luật AI và quyền riêng tư tại Việt Nam chưa được ký duyệt"
     ],
     "release_conditions": [
-      "Limit the pilot to one Vietnam university introductory artificial intelligence course and ungraded practice",
-      "Complete GAP-01 through GAP-04 and obtain all named owner approvals before enabling student access",
-      "Keep automatic grading, misconduct detection, progression decisions, and use on examinations disabled",
-      "Maintain instructor-approved static hints and teaching-assistant escalation as an operational fallback",
-      "Pause immediately on a critical AI course-content error, guardrail breach, unauthorized secondary use, external action, or personal-data incident"
+      "Giới hạn chương trình thử nghiệm trong một môn nhập môn trí tuệ nhân tạo tại một trường đại học ở Việt Nam và chỉ dùng cho bài luyện tập không tính điểm",
+      "Hoàn thành GAP-01 đến GAP-04 và có phê duyệt của tất cả chủ sở hữu được nêu tên trước khi cho sinh viên truy cập",
+      "Tiếp tục vô hiệu hóa chấm điểm tự động, phát hiện gian lận, quyết định tiến trình học và sử dụng trong kỳ thi",
+      "Duy trì gợi ý tĩnh đã được giảng viên phê duyệt và chuyển câu hỏi cho trợ giảng làm phương án dự phòng vận hành",
+      "Tạm dừng ngay khi có lỗi nghiêm trọng về nội dung môn AI, vi phạm chỉ số bảo vệ cứng, sử dụng thứ cấp trái phép, hành động bên ngoài hoặc sự cố dữ liệu cá nhân"
     ],
-    "next_review_trigger": "Review no later than 2026-10-01 and immediately upon any KPI, KRI, or guardrail breach; serious complaint or incident; or change to model, vendor, data, course, user group, market, intended purpose, or automation level.",
-    "residual_risk_rationale": "The restricted recommendation-only pilot, approved source boundary, progressive hints, human escalation, zero AI-only academic decisions, and explicit pause thresholds reduce foreseeable harm. Residual risks of incorrect guidance, over-reliance, unequal impact, and privacy failure remain material, so release is conditional on closing all four blockers and preserving human authority throughout the pilot."
+    "next_review_trigger": "Đánh giá lại chậm nhất vào ngày 2026-10-01 và ngay khi vi phạm bất kỳ KPI, KRI hay chỉ số bảo vệ cứng nào; có khiếu nại hoặc sự cố nghiêm trọng; hoặc có thay đổi về mô hình, nhà cung cấp, dữ liệu, môn học, nhóm người dùng, thị trường, mục đích dự kiến hay mức độ tự động hóa.",
+    "residual_risk_rationale": "Chương trình thử nghiệm giới hạn chỉ đưa ra khuyến nghị, ranh giới nguồn đã duyệt, gợi ý từng bước, chuyển cấp cho con người, không có quyết định học vụ chỉ do AI và các ngưỡng tạm dừng rõ ràng giúp giảm tác hại có thể dự đoán. Rủi ro còn lại về hướng dẫn sai, lệ thuộc quá mức, tác động bất bình đẳng và vi phạm quyền riêng tư vẫn đáng kể, vì vậy việc phát hành phụ thuộc vào việc đóng đủ bốn điều kiện chặn và duy trì quyền quyết định của con người trong suốt thử nghiệm."
   }
 }
