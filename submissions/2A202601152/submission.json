@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0.0",
+  "metadata": {
+    "student_name": "Pham Hai Yen",
+    "student_id": "2A202601152",
+    "group_id": "GROUP-UNASSIGNED",
+    "submitted_at": "2026-08-24T12:23:45+07:00"
+  },
+  "industry": "education-ai-tutor",
+  "product_context": {
+    "product_name": "AIGuide AI Tutor",
+    "product_stage": "pilot",
+    "problem_statement": "Students in large introductory artificial intelligence courses often wait too long for targeted explanations when they struggle with foundational concepts, model evaluation, and responsible AI, while lecturers and teaching assistants cannot provide immediate one-to-one support at every practice moment.",
+    "target_users": [
+      "university students in introductory artificial intelligence courses",
+      "artificial intelligence lecturers",
+      "teaching assistants"
+    ],
+    "value_hypothesis": "Providing timely curriculum-grounded hints at the point of difficulty will reduce time spent stuck and improve practice completion without increasing verified misconceptions about artificial intelligence concepts, model limitations, or responsible-use boundaries.",
+    "in_scope": [
+      "explain foundational artificial intelligence and responsible AI concepts using instructor-approved course materials",
+      "provide progressive hints for ungraded conceptual and code-reading practice",
+      "recommend relevant follow-up AI learning activities",
+      "identify uncertainty and escalate unresolved questions to a teaching assistant"
+    ],
+    "non_goals": [
+      "automatic grading or changes to official grades",
+      "academic misconduct detection or disciplinary decisions",
+      "generating or submitting graded code, assignments, or examinations on a student's behalf",
+      "deploying models or taking external actions for the student",
+      "replacing lecturers or teaching assistants"
+    ],
+    "user_journey_moment": "After a student submits an incorrect answer to an ungraded AI-course practice activity and before the complete instructor-approved explanation is shown",
+    "target_launch_or_review_date": "2026-10-01",
+    "automation_level": "recommendation",
+    "fallback_experience": "If the tutor is unavailable, cannot ground an answer in approved course material, or is paused for safety review, the learning platform shows instructor-approved static hints and lets the student send the question to a teaching assistant.",
+    "decision_reversibility": "partially-reversible"
+  },
+  "system_profile": {
+    "purpose": "Support university students in understanding foundational artificial intelligence, model evaluation, and responsible AI concepts through timely curriculum-grounded hints during ungraded practice.",
+    "user_groups": [
+      "university students in introductory artificial intelligence courses",
+      "artificial intelligence lecturers",
+      "teaching assistants",
+      "course coordinators"
+    ],
+    "decision_impact": "The tutor influences which explanation, hint, or practice activity a student sees next, but it cannot change official grades, determine academic misconduct, or make progression decisions.",
+    "data_types": [
+      "instructor-approved artificial intelligence course materials and worked examples",
+      "conceptual questions, code-reading exercises, and expected reasoning steps",
+      "student-entered questions and practice answers using synthetic data for this lab",
+      "pseudonymous interaction and feedback logs",
+      "content-quality review and escalation records"
+    ],
+    "deployment_context": "A limited pilot embedded in the university learning management system for one introductory artificial intelligence course in Vietnam, available only during ungraded practice and monitored by the course teaching team.",
+    "target_markets": [
+      "Vietnam"
+    ],
+    "system_boundary": {
+      "model": "A language model configured to retrieve from an instructor-approved artificial intelligence course knowledge base, generate progressive hints, express uncertainty, and abstain when approved grounding is unavailable.",
+      "application": "A learning-management-system chat interface that displays hints and citations, collects student feedback, enforces scope restrictions, logs review evidence, and routes unresolved questions to teaching assistants.",
+      "people": [
+        "students who request and act on hints",
+        "lecturers who approve source materials and learning policies",
+        "teaching assistants who review escalations and reported errors",
+        "course coordinators who own the pilot and pause decisions",
+        "privacy and responsible AI reviewers who independently assess launch evidence"
+      ],
+      "vendors": [
+        "language model service provider",
+        "learning management system provider"
+      ],
+      "upstream_inputs": [
+        "approved artificial intelligence syllabus and lecture materials",
+        "instructor-validated conceptual, evaluation, and code-reading exercise bank",
+        "student questions and ungraded practice attempts",
+        "course safety policy and escalation rules",
+        "vendor model and service documentation"
+      ],
+      "downstream_decisions": [
+        "show a grounded progressive hint",
+        "recommend a related ungraded practice activity",
+        "abstain and show instructor-approved fallback content",
+        "escalate an unresolved or reported response to a teaching assistant",
+        "pause affected tutor content pending human review"
+      ]
+    }
+  },
+  "industry_risk_snapshot": {
+    "harm_severity": 3,
+    "high_stakes": 3,
+    "sensitive_data": 3,
+    "affected_scale": 2,
+    "human_review_need": 4,
+    "rationale": "Harm severity is 3 because incorrect or misleading hints can reinforce misconceptions about artificial intelligence, model limitations, evaluation, bias, or responsible use, although an instructor can usually correct them. High-stakes impact is 3 because the tutor can influence preparation and confidence but is prohibited from grading, misconduct findings, progression decisions, model deployment, or external actions. Sensitive-data exposure is 3 because questions, practice attempts, and pseudonymous interaction logs can reveal individual learning difficulties and therefore require minimization, access control, and retention limits. Affected scale is 2 because the initial deployment is restricted to one course and a controlled pilot cohort. Human-review need is 4 because AI lecturers must approve the knowledge base and teaching assistants need authority to review reported errors, resolve escalations, and pause unsafe content. These ratings support product-risk triage and do not determine legal classification."
+  },
+  "legal_classification": {
+    "vietnam": {
+      "status": "uncertain-requires-legal-review",
+      "rationale": "The pilot is a recommendation-only university artificial intelligence course tutor and excludes grading, misconduct findings, progression decisions, model deployment, and external actions. Vietnam's AI Law, implementing decree, high-risk list, and personal-data law are in force, but the final intended-purpose match, provider and deployer roles, student-data flow, vendor transfer, and required controls have not been confirmed by qualified reviewers; signed legal and privacy review is therefore a release blocker.",
+      "source_ids": [
+        "SRC-05",
+        "SRC-06",
+        "SRC-07",
+        "SRC-08"
+      ]
+    },
+    "eu": {
+      "status": "not-applicable",
+      "rationale": "The current pilot is offered only for one university course in Vietnam and is not placed on the EU market or used in the EU, so EU classification is not applicable to this release scope. Any EU expansion, learning-outcome evaluation, learning-process steering, grading, cheating detection, or material purpose change requires a new role and high-risk classification review before release.",
+      "source_ids": [
+        "SRC-09"
+      ]
+    },
+    "other_markets": "Not assessed because the pilot is limited to Vietnam; any additional market is a material scope change that requires legal, privacy, and product-risk re-review.",
+    "legal_review_required": true
+  },
+  "product_metrics": {
+    "success_kpi": "By the end of the six-week pilot, at least 70% of participating students who complete both assessments improve introductory AI-course mastery by at least 10 percentage points from pre-test to post-test, with the denominator and attrition reported.",
+    "risk_kri": "The confirmed factual or conceptual error rate remains at or below 1% in each weekly stratified review sample, with any response that materially misstates a foundational AI concept, evaluation result, model limitation, bias risk, or responsible-use safeguard treated as a critical error.",
+    "guardrail_metric": "The number of official grade changes, academic-misconduct referrals, model deployments, or external actions based solely on AIGuide output or tutor logs remains exactly zero; any occurrence pauses the pilot immediately.",
+    "review_cadence": "The Product, AI Course Content, Learning Experience, Privacy, and Responsible AI owners review the pilot weekly and immediately after any critical error, threshold breach, data incident, serious complaint, or change to model, vendor, course, data, market, intended purpose, or automation level."
+  },
+  "release_decision": {
+    "accountable_product_owner": "Learning Platform Product Owner",
+    "risk_acceptance_owner": "Dean of Undergraduate Education",
+    "independent_reviewer": "Responsible AI, Privacy, and Academic Quality Review Panel",
+    "decision": "conditional-go",
+    "release_blockers": [
+      "GAP-01: content-quality and grounding evidence pack is not approved",
+      "GAP-02: progressive-hint and over-reliance acceptance review is not passed",
+      "GAP-03: purpose-limitation, incident-correction, and appeal evidence is not signed",
+      "GAP-04: Vietnam AI and privacy applicability memoranda are not signed"
+    ],
+    "release_conditions": [
+      "Limit the pilot to one Vietnam university introductory artificial intelligence course and ungraded practice",
+      "Complete GAP-01 through GAP-04 and obtain all named owner approvals before enabling student access",
+      "Keep automatic grading, misconduct detection, progression decisions, and use on examinations disabled",
+      "Maintain instructor-approved static hints and teaching-assistant escalation as an operational fallback",
+      "Pause immediately on a critical AI course-content error, guardrail breach, unauthorized secondary use, external action, or personal-data incident"
+    ],
+    "next_review_trigger": "Review no later than 2026-10-01 and immediately upon any KPI, KRI, or guardrail breach; serious complaint or incident; or change to model, vendor, data, course, user group, market, intended purpose, or automation level.",
+    "residual_risk_rationale": "The restricted recommendation-only pilot, approved source boundary, progressive hints, human escalation, zero AI-only academic decisions, and explicit pause thresholds reduce foreseeable harm. Residual risks of incorrect guidance, over-reliance, unequal impact, and privacy failure remain material, so release is conditional on closing all four blockers and preserving human authority throughout the pilot."
+  }
+}
